@@ -70,6 +70,6 @@ The extension uses the following permissions in its manifest:
 
 - Thank you to the Plasmo framework and its contributors for providing a robust tool for building Chrome extensions.
 - Special thanks to the creators of the Gemini API for their powerful features that enhance our extension's capabilities.
-```
+
 
 
