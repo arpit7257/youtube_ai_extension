@@ -63,7 +63,7 @@ The extension uses the following permissions in its manifest:
 
 ## Author
 
-- **Arpit Karn** - [your GitHub profile](https://github.com/arpit7257)
+- **Arpit Karn** - [GitHub profile](https://github.com/arpit7257)
 
 
 ## Acknowledgments
