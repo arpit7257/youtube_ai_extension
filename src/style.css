@@ -1,0 +1,273 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#plasmo-shadow-container {
+  z-index: 10 !important;
+}
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+
+.new-tab {
+    padding: 1.5rem;
+    max-width: 24rem; /* max-w-md */
+    margin: 0 auto; /* mx-auto */
+    background-color: white; /* bg-white */
+    border-radius: 0.5rem; /* rounded-lg */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+    display: flex; /* flex */
+    flex-direction: column; /* flex-col */
+    align-items: center; /* items-center */
+  }
+  
+  .new-tab h1 {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 700; /* font-bold */
+    color: #2d3748; /* text-gray-800 */
+    margin-bottom: 1rem; /* mb-4 */
+  }
+  
+  .new-tab a {
+    color: #2563eb; /* text-blue-600 */
+    text-decoration: none; /* no underline */
+  }
+  
+  .new-tab a:hover {
+    text-decoration: underline; /* hover:underline */
+  }
+  
+  .new-tab input {
+    margin-top: 1rem; /* mt-4 */
+    width: 100%; /* w-full */
+    padding: 0.75rem; /* p-3 */
+    border: 1px solid #d1d5db; /* border-gray-300 */
+    border-radius: 0.5rem; /* rounded-lg */
+    outline: none; /* focus:outline-none */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* shadow-sm */
+  }
+  
+  .new-tab input:focus {
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.5); /* focus:ring-2 focus:ring-blue-400 */
+  }
+  
+  .new-tab footer {
+    margin-top: 1.5rem; /* mt-6 */
+    font-size: 0.875rem; /* text-sm */
+    color: #6b7280; /* text-gray-500 */
+  }
+  
+  .extension-actions {
+    border: 1px solid #e5e7eb; /* border-zinc-200 */
+    border-radius: 0.375rem; /* rounded-md */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem; /* p-3 */
+    background-color: white; /* bg-white */
+  }
+  
+  .extension-actions.dark {
+    background-color: #0f0f0f; /* dark:bg-[#0f0f0f] */
+    color: white; /* dark:text-white */
+    border-color: #3f3f46; /* dark:border-zinc-800 */
+  }
+  
+  .extension-actions .icon {
+    height: 1.5rem; /* h-6 */
+    width: 1.5rem; /* w-6 */
+    opacity: 0.5; /* opacity-50 */
+    margin-left: 0.5rem; /* ml-2 */
+  }
+  
+  .nav-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem; /* space-x-4 */
+  }
+  
+  .nav-buttons .button-group {
+    display: flex;
+  }
+  
+  .button-group button {
+    background-color: transparent;
+    border: 1px solid #d1d5db; /* border-gray-300 */
+    color: #374151; /* text-gray-700 */
+    padding: 0.5rem 1rem; /* px-4 py-2 */
+    border-radius: 0; /* avoid rounding individual buttons */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: background-color 0.2s ease;
+  }
+  
+  .button-group button:hover {
+    background-color: #f3f4f6; /* hover:bg-gray-100 */
+  }
+  
+  .button-group button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #3b82f6; /* focus:ring-2 focus:ring-blue-500 */
+  }
+  
+  .button-group button.rounded-left {
+    border-top-left-radius: 0.375rem; /* rounded-l-md */
+    border-bottom-left-radius: 0.375rem;
+  }
+  
+  .button-group button.rounded-right {
+    border-top-right-radius: 0.375rem; /* rounded-r-md */
+    border-bottom-right-radius: 0.375rem;
+  }
+  
+  .dark .button-group button {
+    color: white; /* dark:text-white */
+    border-color: #3f3f46; /* dark:border-zinc-700 */
+  }
+  
+  .dark .button-group button:hover {
+    background-color: #3f3f46; /* dark:hover:bg-zinc-700 */
+  }
+  
+  .right-side-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* space-x-4 */
+  }
+  
+  .right-side-actions .relative {
+    position: relative;
+  }
+  
+  .copy-button {
+    background-color: transparent;
+    border: 1px solid #d1d5db; /* border-gray-300 */
+    padding: 0.5rem; /* p-2 */
+    border-radius: 0.375rem; /* rounded-md */
+    transition: background-color 0.2s ease;
+  }
+  
+  .copy-button:hover {
+    background-color: #f3f4f6; /* hover:bg-gray-100 */
+  }
+  
+  .copy-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #3b82f6; /* focus:ring-2 focus:ring-blue-500 */
+  }
+  
+  .dark .copy-button {
+    border-color: #3f3f46; /* dark:border-zinc-700 */
+  }
+  
+  .dark .copy-button:hover {
+    background-color: #3f3f46; /* dark:hover:bg-zinc-700 */
+  }
+  
+  .tooltip {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 100%;
+    margin-bottom: 0.5rem; /* mb-2 */
+    padding: 0.25rem 0.5rem;
+    background-color: #374151; /* bg-gray-700 */
+    color: white;
+    font-size: 0.75rem; /* text-xs */
+    border-radius: 0.375rem; /* rounded */
+    opacity: 0;
+    transition: opacity 0.2s ease;
+  }
+  
+  .relative:hover .tooltip {
+    opacity: 1;
+  }
+  
+  .dropdown-button {
+    background-color: transparent;
+    border: 1px solid #d1d5db; /* border-gray-300 */
+    padding: 0.5rem; /* p-2 */
+    border-radius: 0.375rem; /* rounded-md */
+  }
+  
+  .dropdown-button:hover {
+    background-color: #f3f4f6; /* hover:bg-gray-100 */
+  }
+  
+  .dark .dropdown-button {
+    border-color: #3f3f46; /* dark:border-zinc-700 */
+  }
+  
+  .dark .dropdown-button:hover {
+    background-color: #3f3f46; /* dark:hover:bg-zinc-700 */
+  }
+  
+  /* General Styles */
+.extension-container {
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 10;
+}
+
+.extension-content {
+  width: 100%;
+}
+
+/* Collapsible Section */
+.collapsible {
+  margin-bottom: 1rem;
+}
+
+.collapsible-content {
+  width: 100%;
+  max-height: 500px;
+  border: 1px solid #e5e5e5;
+  border-radius: 0.5rem;
+  overflow-y: auto;
+  padding: 1rem;
+}
+
+/* Collapsed State */
+.collapsible.collapsed .collapsible-content {
+  display: none;
+}
+
+/* Toggle Button */
+.collapse-toggle {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.collapse-toggle:hover {
+  background-color: #e1e1e1;
+}
+
+/* Theme-based styling */
+.light {
+  background-color: #fff;
+  color: #333;
+}
+
+.dark {
+  background-color: #0f0f0f;
+  color: white;
+}

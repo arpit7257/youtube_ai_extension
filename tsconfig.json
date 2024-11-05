@@ -1,0 +1,19 @@
+{
+  "extends": "plasmo/templates/tsconfig.base",
+  "exclude": ["node_modules"],
+  "include": [
+    ".plasmo/index.d.ts", 
+    "./**/*.ts", 
+    "./**/*.tsx", 
+    "vite-env.d.ts",  // Add the vite-env declaration file
+    "types/**/*.d.ts" // Include additional type declarations if necessary
+  ],
+  "compilerOptions": {
+    "paths": {
+      "~*": ["./src/*"],
+      "@/*": ["./*"]
+    },
+    "baseUrl": ".",
+    // You can add any additional compiler options you need here
+  }
+}
