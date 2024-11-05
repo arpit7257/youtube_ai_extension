@@ -72,7 +72,4 @@ The extension uses the following permissions in its manifest:
 - Special thanks to the creators of the Gemini API for their powerful features that enhance our extension's capabilities.
 ```
 
-### Instructions to Use
 
-1. Replace `yourusername` with your actual GitHub username in the clone URL and author section.
-2. Update any additional information specific to your project as necessary.
