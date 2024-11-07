@@ -1,7 +1,7 @@
 Here’s the updated README file reflecting the use of `pnpm` in your project:
 
 ```markdown
-# YouTube Extension
+# YouTube AI Extension
 
 ## Overview
 
